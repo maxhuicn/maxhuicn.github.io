@@ -2,11 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://maxhuicn.github.io/p/blog/</loc>
-    <lastmod>2022-04-04T12:34:35+08:00</lastmod>
+    <loc>https://maxhuicn.github.io/categories/</loc>
+    <lastmod>2022-04-04T20:36:59+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://maxhuicn.github.io/zh-cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://maxhuicn.github.io/ar/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maxhuicn.github.io/categories/"
+                />
   </url><url>
     <loc>https://maxhuicn.github.io/</loc>
-    <lastmod>2022-04-04T12:34:35+08:00</lastmod>
+    <lastmod>2022-04-04T20:36:59+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
@@ -24,24 +39,36 @@
                 />
   </url><url>
     <loc>https://maxhuicn.github.io/post/</loc>
-    <lastmod>2022-04-04T12:34:35+08:00</lastmod>
-  </url><url>
-    <loc>https://maxhuicn.github.io/categories/</loc>
+    <lastmod>2022-04-04T20:36:59+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="zh-cn"
-                href="https://maxhuicn.github.io/zh-cn/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://maxhuicn.github.io/ar/categories/"
+                href="https://maxhuicn.github.io/zh-cn/post/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://maxhuicn.github.io/categories/"
+                href="https://maxhuicn.github.io/post/"
                 />
+  </url><url>
+    <loc>https://maxhuicn.github.io/categories/test/</loc>
+    <lastmod>2022-04-04T20:36:59+08:00</lastmod>
+  </url><url>
+    <loc>https://maxhuicn.github.io/p/test/</loc>
+    <lastmod>2022-04-04T20:36:59+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://maxhuicn.github.io/zh-cn/p/%E6%B5%8B%E8%AF%95/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maxhuicn.github.io/p/test/"
+                />
+  </url><url>
+    <loc>https://maxhuicn.github.io/p/blog/</loc>
+    <lastmod>2022-04-04T12:34:35+08:00</lastmod>
   </url><url>
     <loc>https://maxhuicn.github.io/tags/</loc>
     <xhtml:link
