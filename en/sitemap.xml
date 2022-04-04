@@ -2,6 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://maxhuicn.github.io/p/blog/</loc>
+    <lastmod>2022-04-04T12:34:35+08:00</lastmod>
+  </url><url>
+    <loc>https://maxhuicn.github.io/</loc>
+    <lastmod>2022-04-04T12:34:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://maxhuicn.github.io/zh-cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ar"
+                href="https://maxhuicn.github.io/ar/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://maxhuicn.github.io/"
+                />
+  </url><url>
+    <loc>https://maxhuicn.github.io/post/</loc>
+    <lastmod>2022-04-04T12:34:35+08:00</lastmod>
+  </url><url>
     <loc>https://maxhuicn.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -17,23 +41,6 @@
                 rel="alternate"
                 hreflang="en"
                 href="https://maxhuicn.github.io/categories/"
-                />
-  </url><url>
-    <loc>https://maxhuicn.github.io/</loc>
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://maxhuicn.github.io/zh-cn/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="ar"
-                href="https://maxhuicn.github.io/ar/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://maxhuicn.github.io/"
                 />
   </url><url>
     <loc>https://maxhuicn.github.io/tags/</loc>
