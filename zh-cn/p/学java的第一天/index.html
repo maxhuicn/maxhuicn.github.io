@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us" dir="ltr">
     <head><meta charset='utf-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='因本人md语法还不是很了解，后续会添加'><title>关于创建博客中遇到的坑</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content='从入门到放弃'><title>学java的第一天</title>
 
-<link rel='canonical' href='https://maxhuicn.github.io/zh-cn/p/%E5%85%B3%E4%BA%8E%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/'>
+<link rel='canonical' href='https://maxhuicn.github.io/zh-cn/p/%E5%AD%A6java%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/'>
 
-<link rel="stylesheet" href="/scss/style.min.d9e0562edde3d2bdf9d3d81365095a29d062ddaaa5d671f22168e57dfdb18b4f.css"><meta property='og:title' content='关于创建博客中遇到的坑'>
-<meta property='og:description' content='因本人md语法还不是很了解，后续会添加'>
-<meta property='og:url' content='https://maxhuicn.github.io/zh-cn/p/%E5%85%B3%E4%BA%8E%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/'>
+<link rel="stylesheet" href="/scss/style.min.d9e0562edde3d2bdf9d3d81365095a29d062ddaaa5d671f22168e57dfdb18b4f.css"><meta property='og:title' content='学java的第一天'>
+<meta property='og:description' content='从入门到放弃'>
+<meta property='og:url' content='https://maxhuicn.github.io/zh-cn/p/%E5%AD%A6java%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/'>
 <meta property='og:site_name' content='数钱不如数星星'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-04-04T21:32:44&#43;08:00'/><meta property='article:modified_time' content='2022-04-04T21:32:44&#43;08:00'/>
-<meta name="twitter:title" content="关于创建博客中遇到的坑">
-<meta name="twitter:description" content="因本人md语法还不是很了解，后续会添加">
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:published_time' content='2022-04-06T13:14:14&#43;08:00'/><meta property='article:modified_time' content='2022-04-06T13:14:14&#43;08:00'/>
+<meta name="twitter:title" content="学java的第一天">
+<meta name="twitter:description" content="从入门到放弃">
     </head>
     <body class="
     article-page
@@ -170,23 +170,15 @@
 
     <div class="article-details">
     
-    <header class="article-category">
-        
-            <a href="/zh-cn/categories/%E8%B0%83%E8%AF%95/" >
-                调试
-            </a>
-        
-    </header>
-    
 
     <div class="article-title-wrapper">
         <h2 class="article-title">
-            <a href="/zh-cn/p/%E5%85%B3%E4%BA%8E%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/">关于创建博客中遇到的坑</a>
+            <a href="/zh-cn/p/%E5%AD%A6java%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/">学java的第一天</a>
         </h2>
     
         
         <h3 class="article-subtitle">
-            因本人md语法还不是很了解，后续会添加
+            从入门到放弃
         </h3>
         
     </div>
@@ -204,7 +196,7 @@
   <path d="M3 11h16" />
   <path d="M18 16.496v1.504l1 1" />
 </svg>
-                <time class="article-time--published">Apr 04, 2022</time>
+                <time class="article-time--published">Apr 06, 2022</time>
             </div>
         
 
@@ -233,11 +225,85 @@
     <section class="article-content">
     
     
-    <h1 id="正文测试">正文测试</h1>
-<p>1.pycharm打开博客文件夹，打开终端遇到代码不能执行的情况，可以使用管理员模式打开pycharm</p>
-<p>2.每次写完blog，要将draft参数设置为false，或者将其删除，否则不会在网站上显示出来</p>
-<p>3.markdown标题标准写法写法需要在&quot;#&ldquo;和后面字符之间加一个空格
-如果不加空格 有些引擎就解析不了 (来自https://segmentfault.com/u/jingxiaowang)</p>
+    <h1 id="测试jdk是否安装成功">测试JDK是否安装成功</h1>
+<p>1、&ldquo;开始&rdquo;-&gt;&ldquo;运行&rdquo;，键入&quot;cmd&quot;；
+2、键入命令: java -version（”-“一定要 否则会报错）、java、javac 几个命令，出现以下信息，说明环境变量配置成功；</p>
+<p>javac：是编译命令，将java源文件编译成.class字节码文件</p>
+<h1 id="如何理解类和对象">如何理解类和对象</h1>
+<p>以 LOL 为例。</p>
+<p>首先，比如 lol 中的英雄，它就是一个类。因为所有的英雄都有对应的属性。例如：</p>
+<pre><code>public class Hero {
+String name; //名字
+int attackDamage; //物理攻击
+int abilityPower; //法术强度
+int armor; //护甲
+int magicResistance; //魔抗
+float attackSpeed; //攻击速度
+int cooldownReduction; //冷却缩减
+int criticalStrike; //暴击率
+int moveSpeed; //移动速度
+int hp; //血量
+int mp; //蓝量
+}    
+</code></pre>
+<p>除了属性，英雄还有行为。比如拆塔，坑队友，K头，跳舞等。</p>
+<pre><code>public class Hero {
+public void DestroyTower(){
+    System.out.println(&quot;正在拆塔&quot;);
+}
+public void Keng(){
+    System.out.println(&quot;坑了一下队友&quot;);
+}
+public void Kb(){
+    System.out.println(&quot;抢到了一个人头&quot;);
+}
+public void Dance(){
+    System.out.println(&quot;正在跳舞&quot;);
+}
+}
+</code></pre>
+<p>对象就是指具体的英雄，比如德玛(garen)。就可以在 main 方法中 new 一个对象。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">public static void main(String[] args) 
+</span></span><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">    Hero garen = new Hero();
+</span></span><span class="line"><span class="cl">    garen.name = &#34;盖伦&#34;;
+</span></span><span class="line"><span class="cl">    garen.attackDamage = 71;
+</span></span><span class="line"><span class="cl">    garen.abilityPower = 0;
+</span></span><span class="line"><span class="cl">    garen.armor = 36;
+</span></span><span class="line"><span class="cl">    garen.magicResistance = 32;
+</span></span><span class="line"><span class="cl">    garen.attackSpeed = 0.69f;
+</span></span><span class="line"><span class="cl">    garen.cooldownReduction = 0;
+</span></span><span class="line"><span class="cl">    garen.criticalStrike = 0;
+</span></span><span class="line"><span class="cl">    garen.moveSpeed = 350;
+</span></span><span class="line"><span class="cl">    garen.hp = 600;
+</span></span><span class="line"><span class="cl">    garen.mp = 0;
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="常量设置">常量设置</h1>
+<p>在 Java 中使用 final 关键字来修饰常量，声明方式和变量类似：</p>
+<p>final double PI = 3.1415927;</p>
+<h1 id="自动类型转换">自动类型转换</h1>
+<p>整型、实型（常量）、字符型数据可以混合运算。运算中，不同类型的数据先转化为同一类型，然后进行运算。</p>
 
 </section>
 

@@ -6,15 +6,104 @@
         <description>Recent content in Posts on 数钱不如数星星</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 04 Apr 2022 21:32:44 +0800</lastBuildDate><atom:link href="https://maxhuicn.github.io/zh-cn/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Wed, 06 Apr 2022 13:14:14 +0800</lastBuildDate><atom:link href="https://maxhuicn.github.io/zh-cn/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>学java的第一天</title>
+        <link>https://maxhuicn.github.io/zh-cn/p/%E5%AD%A6java%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/</link>
+        <pubDate>Wed, 06 Apr 2022 13:14:14 +0800</pubDate>
+        
+        <guid>https://maxhuicn.github.io/zh-cn/p/%E5%AD%A6java%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/</guid>
+        <description>&lt;h1 id=&#34;测试jdk是否安装成功&#34;&gt;测试JDK是否安装成功&lt;/h1&gt;
+&lt;p&gt;1、&amp;ldquo;开始&amp;rdquo;-&amp;gt;&amp;ldquo;运行&amp;rdquo;，键入&amp;quot;cmd&amp;quot;；
+2、键入命令: java -version（”-“一定要 否则会报错）、java、javac 几个命令，出现以下信息，说明环境变量配置成功；&lt;/p&gt;
+&lt;p&gt;javac：是编译命令，将java源文件编译成.class字节码文件&lt;/p&gt;
+&lt;h1 id=&#34;如何理解类和对象&#34;&gt;如何理解类和对象&lt;/h1&gt;
+&lt;p&gt;以 LOL 为例。&lt;/p&gt;
+&lt;p&gt;首先，比如 lol 中的英雄，它就是一个类。因为所有的英雄都有对应的属性。例如：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class Hero {
+String name; //名字
+int attackDamage; //物理攻击
+int abilityPower; //法术强度
+int armor; //护甲
+int magicResistance; //魔抗
+float attackSpeed; //攻击速度
+int cooldownReduction; //冷却缩减
+int criticalStrike; //暴击率
+int moveSpeed; //移动速度
+int hp; //血量
+int mp; //蓝量
+}    
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;除了属性，英雄还有行为。比如拆塔，坑队友，K头，跳舞等。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class Hero {
+public void DestroyTower(){
+    System.out.println(&amp;quot;正在拆塔&amp;quot;);
+}
+public void Keng(){
+    System.out.println(&amp;quot;坑了一下队友&amp;quot;);
+}
+public void Kb(){
+    System.out.println(&amp;quot;抢到了一个人头&amp;quot;);
+}
+public void Dance(){
+    System.out.println(&amp;quot;正在跳舞&amp;quot;);
+}
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对象就是指具体的英雄，比如德玛(garen)。就可以在 main 方法中 new 一个对象。&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;15
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-fallback&#34; data-lang=&#34;fallback&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;public static void main(String[] args) 
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;{
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    Hero garen = new Hero();
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.name = &amp;#34;盖伦&amp;#34;;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.attackDamage = 71;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.abilityPower = 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.armor = 36;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.magicResistance = 32;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.attackSpeed = 0.69f;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.cooldownReduction = 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.criticalStrike = 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.moveSpeed = 350;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.hp = 600;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;    garen.mp = 0;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;}
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h1 id=&#34;常量设置&#34;&gt;常量设置&lt;/h1&gt;
+&lt;p&gt;在 Java 中使用 final 关键字来修饰常量，声明方式和变量类似：&lt;/p&gt;
+&lt;p&gt;final double PI = 3.1415927;&lt;/p&gt;
+&lt;h1 id=&#34;自动类型转换&#34;&gt;自动类型转换&lt;/h1&gt;
+&lt;p&gt;整型、实型（常量）、字符型数据可以混合运算。运算中，不同类型的数据先转化为同一类型，然后进行运算。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>关于创建博客中遇到的坑</title>
         <link>https://maxhuicn.github.io/zh-cn/p/%E5%85%B3%E4%BA%8E%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</link>
         <pubDate>Mon, 04 Apr 2022 21:32:44 +0800</pubDate>
         
         <guid>https://maxhuicn.github.io/zh-cn/p/%E5%85%B3%E4%BA%8E%E5%88%9B%E5%BB%BA%E5%8D%9A%E5%AE%A2%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E5%9D%91/</guid>
-        <description>&lt;h2 id=&#34;正文测试&#34;&gt;正文测试&lt;/h2&gt;
-&lt;p&gt;1.pycharm打开博客文件夹，打开终端遇到代码不能执行的情况，可以使用管理员模式打开pycharm
-2.每次写完blog，要将draft参数设置为false，或者将其删除，否则不会在网站上显示出来&lt;/p&gt;
+        <description>&lt;h1 id=&#34;正文测试&#34;&gt;正文测试&lt;/h1&gt;
+&lt;p&gt;1.pycharm打开博客文件夹，打开终端遇到代码不能执行的情况，可以使用管理员模式打开pycharm&lt;/p&gt;
+&lt;p&gt;2.每次写完blog，要将draft参数设置为false，或者将其删除，否则不会在网站上显示出来&lt;/p&gt;
+&lt;p&gt;3.markdown标题标准写法写法需要在&amp;quot;#&amp;ldquo;和后面字符之间加一个空格
+如果不加空格 有些引擎就解析不了 (来自https://segmentfault.com/u/jingxiaowang)&lt;/p&gt;
 </description>
         </item>
         <item>
