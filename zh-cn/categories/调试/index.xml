@@ -15,8 +15,7 @@
         <description>&lt;h1 id=&#34;正文测试&#34;&gt;正文测试&lt;/h1&gt;
 &lt;p&gt;1.pycharm打开博客文件夹，打开终端遇到代码不能执行的情况，可以使用管理员模式打开pycharm&lt;/p&gt;
 &lt;p&gt;2.每次写完blog，要将draft参数设置为false，或者将其删除，否则不会在网站上显示出来&lt;/p&gt;
-&lt;p&gt;3.markdown标题标准写法写法需要在&amp;quot;#&amp;ldquo;和后面字符之间加一个空格
-如果不加空格 有些引擎就解析不了 (来自https://segmentfault.com/u/jingxiaowang)&lt;/p&gt;
+&lt;p&gt;3.markdown标题标准写法写法需要在&amp;quot;#&amp;ldquo;和后面字符之间加一个空格 如果不加空格 有些引擎就解析不了&lt;/p&gt;
 </description>
         </item>
         
