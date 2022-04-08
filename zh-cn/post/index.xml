@@ -6,7 +6,42 @@
         <description>Recent content in Posts on 数钱不如数星星</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Wed, 06 Apr 2022 13:14:14 +0800</lastBuildDate><atom:link href="https://maxhuicn.github.io/zh-cn/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 08 Apr 2022 09:21:43 +0800</lastBuildDate><atom:link href="https://maxhuicn.github.io/zh-cn/post/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>随便记点计算机网络</title>
+        <link>https://maxhuicn.github.io/zh-cn/p/%E9%9A%8F%E4%BE%BF%E8%AE%B0%E7%82%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+        <pubDate>Fri, 08 Apr 2022 09:21:43 +0800</pubDate>
+        
+        <guid>https://maxhuicn.github.io/zh-cn/p/%E9%9A%8F%E4%BE%BF%E8%AE%B0%E7%82%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
+        <description>&lt;img src="https://maxhuicn.github.io/zh-cn/p/%E9%9A%8F%E4%BE%BF%E8%AE%B0%E7%82%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/florian-klauer-nptLmg6jqDo-unsplash.jpg" alt="Featured image of post 随便记点计算机网络" /&gt;&lt;hr&gt;
+&lt;h2 id=&#34;以太网帧格式networkjpg&#34;&gt;&lt;img src=&#34;https://maxhuicn.github.io/zh-cn/p/%E9%9A%8F%E4%BE%BF%E8%AE%B0%E7%82%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/network.jpg&#34;
+	width=&#34;933&#34;
+	height=&#34;415&#34;
+	srcset=&#34;https://maxhuicn.github.io/zh-cn/p/%E9%9A%8F%E4%BE%BF%E8%AE%B0%E7%82%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/network_hueadef32a4444d7b28a5545f50797302d_41507_480x0_resize_q75_box.jpg 480w, https://maxhuicn.github.io/zh-cn/p/%E9%9A%8F%E4%BE%BF%E8%AE%B0%E7%82%B9%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/network_hueadef32a4444d7b28a5545f50797302d_41507_1024x0_resize_q75_box.jpg 1024w&#34;
+	loading=&#34;lazy&#34;
+	
+		alt=&#34;以太网帧格式&#34;
+	
+	
+		class=&#34;gallery-image&#34; 
+		data-flex-grow=&#34;224&#34;
+		data-flex-basis=&#34;539px&#34;
+	
+&gt;&lt;/h2&gt;
+&lt;h2 id=&#34;arp&#34;&gt;ARP&lt;/h2&gt;
+&lt;p&gt;IP协议可以使不同网络中的两个设备互相通信，使他们能够像位于同一个网络（当然得使用路由器），
+实际的运输在第二层（数据链路层）&lt;/p&gt;
+&lt;p&gt;首先这两个设备都有两种不同的网络地址，第一个是本地网络的物理地址，第二个是用于“虚网”传输的地址（ip地址）；
+现在我们作为设备A，向设备B发送一个报文，我们需要知道设备B的物理地址和IP地址，B的IP地址在被发送的数据包中（与A设备的地址一起），那如何知道B设备的物理地址呢？
+这里可以用到一种方法 ARP协议&lt;/p&gt;
+&lt;p&gt;当我们知道了A设备的IP地址,但需要知道B设备的物理地址的时候，那我们就会发送一个广播帧（形式上全1），该广播帧写有ARP报文，报文中有目的设备的协议地址，所有设备都能接受到这个帧， 但只有具有该协议的设备B会发送应答报文，发送B设备的物理地址。&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;现在我们看看这个&lt;del&gt;广播帧&lt;/del&gt;ARP的&lt;del&gt;传输&lt;/del&gt;工作过程&lt;/p&gt;
+&lt;p&gt;由于在不同网段，所以这个&lt;del&gt;数据包&lt;/del&gt;请求报文会先发送到这个网段的路由器上，&lt;del&gt;路由器根据路由表查到&lt;/del&gt;
+由这个路由器完成&lt;strong&gt;间接交付&lt;/strong&gt;。当设备A从收到的从路由器发回来的响应报文中获得路由器网关的MAC地址后，将报文封装并发给网关。如果网关没有主机B的ARP表项，网关会广播ARP请求，
+，当网关从收到的响应报文中获得主机B的MAC地址后，就可以将报文发给主机B；如果网关已经有主机B的ARP表项，网关直接把报文发给主机B。&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>学java的第一天</title>
         <link>https://maxhuicn.github.io/zh-cn/p/%E5%AD%A6java%E7%9A%84%E7%AC%AC%E4%B8%80%E5%A4%A9/</link>
         <pubDate>Wed, 06 Apr 2022 13:14:14 +0800</pubDate>
