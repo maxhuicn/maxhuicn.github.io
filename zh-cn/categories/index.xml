@@ -6,7 +6,15 @@
         <description>Recent content in Categories on 数钱不如数星星</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Mon, 04 Apr 2022 21:32:44 +0800</lastBuildDate><atom:link href="https://maxhuicn.github.io/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Fri, 08 Apr 2022 17:05:44 +0800</lastBuildDate><atom:link href="https://maxhuicn.github.io/zh-cn/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>python</title>
+        <link>https://maxhuicn.github.io/zh-cn/categories/python/</link>
+        <pubDate>Fri, 08 Apr 2022 17:05:44 +0800</pubDate>
+        
+        <guid>https://maxhuicn.github.io/zh-cn/categories/python/</guid>
+        <description></description>
+        </item>
+        <item>
         <title>调试</title>
         <link>https://maxhuicn.github.io/zh-cn/categories/%E8%B0%83%E8%AF%95/</link>
         <pubDate>Mon, 04 Apr 2022 21:32:44 +0800</pubDate>
