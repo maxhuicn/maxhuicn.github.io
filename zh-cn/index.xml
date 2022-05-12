@@ -6,7 +6,91 @@
         <description>Recent content on 数钱不如数星星</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Fri, 08 Apr 2022 17:05:44 +0800</lastBuildDate><atom:link href="https://maxhuicn.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Sun, 08 May 2022 16:07:26 +0800</lastBuildDate><atom:link href="https://maxhuicn.github.io/zh-cn/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Exception in thread “main” com.microsoft.sqlserver.jdbc.SQLServerException: 列名 ‘xxx’ 无效</title>
+        <link>https://maxhuicn.github.io/zh-cn/p/exception-in-thread-main-com.microsoft.sqlserver.jdbc.sqlserverexception-%E5%88%97%E5%90%8D-xxx-%E6%97%A0%E6%95%88/</link>
+        <pubDate>Sun, 08 May 2022 16:07:26 +0800</pubDate>
+        
+        <guid>https://maxhuicn.github.io/zh-cn/p/exception-in-thread-main-com.microsoft.sqlserver.jdbc.sqlserverexception-%E5%88%97%E5%90%8D-xxx-%E6%97%A0%E6%95%88/</guid>
+        <description>&lt;p&gt;使用JDBC链接了SQL server 2008时
+发现显示错误
+Exception in thread &amp;ldquo;main&amp;rdquo; com.microsoft.sqlserver.jdbc.SQLServerException: 列名 &amp;lsquo;cyn&amp;rsquo; 无效。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://maxhuicn.github.io/post/sql_2th/158809965237000.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;后面发现设计数据库时name这一列使用的是字符类型&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://maxhuicn.github.io/post/sql_2th/158977307176600.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;使用sql语句时 要注意各列的数据类型
+使用update等语句时 如果修改的是int类型 不需要加单引号
+而如果字符类型则需要加单引号&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>在sql server中列名显示无效却仍可执行</title>
+        <link>https://maxhuicn.github.io/zh-cn/p/%E5%9C%A8sql-server%E4%B8%AD%E5%88%97%E5%90%8D%E6%98%BE%E7%A4%BA%E6%97%A0%E6%95%88%E5%8D%B4%E4%BB%8D%E5%8F%AF%E6%89%A7%E8%A1%8C/</link>
+        <pubDate>Sun, 08 May 2022 16:04:39 +0800</pubDate>
+        
+        <guid>https://maxhuicn.github.io/zh-cn/p/%E5%9C%A8sql-server%E4%B8%AD%E5%88%97%E5%90%8D%E6%98%BE%E7%A4%BA%E6%97%A0%E6%95%88%E5%8D%B4%E4%BB%8D%E5%8F%AF%E6%89%A7%E8%A1%8C/</guid>
+        <description>&lt;p&gt;在SQLServer中，当设计（修改）表结构之后，再用SQL语句时，列名会显示无效，但执行可以通过&lt;/p&gt;
+&lt;p&gt;原因是SQL Server的intellisense（智能感知功能）需要重新整理一下，用快捷键Ctrl+Shift+R即可&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Network2th</title>
+        <link>https://maxhuicn.github.io/zh-cn/p/network2th/</link>
+        <pubDate>Thu, 14 Apr 2022 18:02:10 +0800</pubDate>
+        
+        <guid>https://maxhuicn.github.io/zh-cn/p/network2th/</guid>
+        <description>&lt;h2 id=&#34;heading&#34;&gt;&lt;/h2&gt;
+</description>
+        </item>
+        <item>
+        <title>如何不使用中间值交换两个变量的值</title>
+        <link>https://maxhuicn.github.io/zh-cn/p/%E5%A6%82%E4%BD%95%E4%B8%8D%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E5%80%BC%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/</link>
+        <pubDate>Sun, 10 Apr 2022 17:05:21 +0800</pubDate>
+        
+        <guid>https://maxhuicn.github.io/zh-cn/p/%E5%A6%82%E4%BD%95%E4%B8%8D%E4%BD%BF%E7%94%A8%E4%B8%AD%E9%97%B4%E5%80%BC%E4%BA%A4%E6%8D%A2%E4%B8%A4%E4%B8%AA%E5%8F%98%E9%87%8F%E7%9A%84%E5%80%BC/</guid>
+        <description>&lt;h1 id=&#34;heading&#34;&gt;&lt;/h1&gt;
+&lt;p&gt;在刚接触编程时，c语言老师教会我们使用中间变量去交换两个变量的值，那么如何不使用中间变量去交换两个变量的值呢？&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;二进制的数无非就是0或者1，区别也就是我0而你非0，我1而你非1（怎么有点怪怪的www）&lt;/p&gt;
+&lt;p&gt;那么找到两个位置的数是否相同，我们可以从两个数异或出发，找到对应关系&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;两数异或&#34;&gt;两数异或&lt;/h2&gt;
+&lt;h3 id=&#34;第一次异或-aab&#34;&gt;第一次异或 a=a^b&lt;/h3&gt;
+&lt;p&gt;假设a=1100（12）；b=0110（5）
+我们知道异或的性质&lt;/p&gt;
+&lt;p&gt;两数异或后，如果相同该位取0，否则取1，我们就可以得到两数对应位的关系,
+则a=a^b=1010&lt;/p&gt;
+&lt;p&gt;这就代表 a与b两数的第二位与第四位（从右至左）是不同的&lt;/p&gt;
+&lt;h3 id=&#34;第二次异或-bab&#34;&gt;第二次异或 b=a^b&lt;/h3&gt;
+&lt;p&gt;我们知道（也许。。）&lt;/p&gt;
+&lt;p&gt;任一个数n与0异或都是其本身
+0^n=n&lt;/p&gt;
+&lt;p&gt;任一个数n与1异或是其取反
+1^n=!n&lt;/p&gt;
+&lt;p&gt;所以这次异或  a（原a^b）^b 将b的与原a相同的位置保留，并将与原a不同的位置取反
+，这就得到了原a&lt;/p&gt;
+&lt;h3 id=&#34;第三次异或-aab&#34;&gt;第三次异或 a=a^b&lt;/h3&gt;
+&lt;p&gt;此时的b已经是原a的值 与第二次异或同理，a转换成了原b的值&lt;/p&gt;
+&lt;p&gt;ps:在python中可以直接使用&lt;/p&gt;
+&lt;p&gt;a,b=b,a
+&amp;hellip;真简单呀~~&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>pycharm如何查看变量值</title>
         <link>https://maxhuicn.github.io/zh-cn/p/pycharm%E5%A6%82%E4%BD%95%E6%9F%A5%E7%9C%8B%E5%8F%98%E9%87%8F%E5%80%BC/</link>
         <pubDate>Fri, 08 Apr 2022 17:05:44 +0800</pubDate>
